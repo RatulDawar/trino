@@ -29,7 +29,7 @@ public interface TrinoFileSystemFactory
     {
         return create(session);
     }
-    
+
     default TrinoFileSystem create(ConnectorIdentity identity, boolean cachingEnabled)
     {
         return create(identity);
